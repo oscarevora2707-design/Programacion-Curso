@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="index/css/style.css">
+</head>
+<body>
+    <main>
+        <section class="bienvenida">
+            <h1 id="titulo" class="h1">Bienvenido al Sistema de Gestión de Usuarios</h1>
+            <p>Por favor, inicia sesión para continuar.</p>
+        </section>
+        <section>
+            <header>
+                <h1 class="h1">Acceso al Sistema</h1>
+                <p>Introduce tus credenciales para ingresar.</p>
+            </header>   
+            <form>
+                <div>
+                    <label for="txt-name">Nombre Completo:</label>
+                    <input type="text" id="txt-name" name="name" required placeholder="Tu nombre completo">
+                </div>
+                <br>
+                <div>
+                    <label for="txt-email">Correo Electronico:</label>
+                    <input type="email" id="txt-email" name="email">
+                </div>
+                <br>
+                <div>
+                    <label for="txt-password">Contraseña:</label>
+                    <input type="password" id="txt-password" name="password">
+                </div>
+                <br>
+                <div>
+                    <label for="txt-confirm-password">Confirma Contraseña:</label>
+                    <input type="password" id="txt-confirm-password" name="confirm-password">
+                </div>
+                <br>
+                <button id="boton" type="submit">Iniciar Sesión</button>
+                <br>
+
+                <p id="error" style="color: red;">  </p>
+
+            </form>
+            <br>
+            <footer>
+                <a href="/registro/olvidaste_tu_contra.html">¿Olvidaste tu contraseña?</a>
+                <p>¿No tienes una cuenta? <a href="/registro/registrate_aqui.html">Regístrate aquí</a></p>
+            </footer>
+        </section>
+    </main>
+    <script src="/js/login.js"></script>
+</body>
+</html>
